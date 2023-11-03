@@ -1,0 +1,88 @@
+view {
+  font-size: 30rpx;
+  font-weight: 300;
+}
+/* 封面 */
+.cover-image {
+  width: 100%;
+}
+.info-image {
+    object-fit: cover;
+    width: 75%;
+    margin-top: 10rpx;
+}
+
+.details-page-title {
+  text-align: center;
+}
+/* 标题修饰 */
+.details-page-intro .intro-title ,
+.details-page-group .group-title{
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 50rpx;
+  letter-spacing: 10rpx;
+}
+.details-page-title .title-name {
+  margin-top: 40rpx;
+  font-size: 50rpx;
+  font-weight: 400;
+  letter-spacing: 10rpx;
+}
+/* 标题下划线 */
+.title-name::after, 
+.intro-title::after{
+  width: 10%;
+  height: 4rpx;
+  display: block;
+  content: "";
+  position: relative;
+  top: 10rpx;
+  left: 45%;
+  background-color: #5c68e3;
+}
+
+.details-page-title .title-club,
+.title-slogan {
+  margin-top: 20rpx;
+}
+
+.details-page-center {
+  margin-top: 30rpx;
+  text-align: center;
+}
+.center-image{
+  height: 40rpx;
+}
+.details-page-center view {
+  padding: 10rpx;
+}
+
+/* 介绍内容修饰 */
+.details-page-intro .intro-content {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin-top: 40rpx;
+  text-indent:2em;
+}
+/* 群聊 */
+.details-page-group {
+  text-align: center;
+}
+.details-page-group image {
+  margin-top: 20rpx;
+}
+.details-page-group .group-image {
+  width: 400rpx;
+}
+/* 按钮 */
+.details-page-btn {
+  height: 300rpx;
+}
+.apply-btn {
+  width: 500rpx;
+  margin-top: 50rpx;
+  background-color: #707ae6;
+  color: white;
+}

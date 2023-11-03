@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "tdesign-miniprogram": "^0.15.1"
+  },
+  "name": "wxprogram-web",
+  "description": "<!--\r  * @Author: XINYUAN CHEN 2766799927@qq.com\r  * @Date: 2022-07-13 20:59:09\r  * @LastEditors: XINYUAN CHEN 2766799927@qq.com\r  * @LastEditTime: 2022-07-13 21:12:00\r  * @FilePath: \\Community\\README.md\r  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r -->\r ## 使用\r ```\r npm install\r ```",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://e.coding.net/qlstudio/SyluCommunity/wxprogram-web.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

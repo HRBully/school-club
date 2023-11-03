@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "招新",
+    "component": true,
+    "usingComponents": {
+        "t-tabs": "tdesign-miniprogram/tabs/tabs",
+        "t-tab-panel": "tdesign-miniprogram/tabs/tab-panel",
+        "info-card": "/components/info-card/info-card",
+        "t-skeleton": "tdesign-miniprogram/skeleton/skeleton",
+        "t-icon": "tdesign-miniprogram/icon/icon"
+    }
+}

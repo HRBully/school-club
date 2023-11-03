@@ -1,0 +1,70 @@
+/* 标签组件 */
+.tag {
+    height: 25rpx;
+    padding: 5rpx 6rpx;
+    color: white;
+    font-size: 25rpx;
+    line-height: 25rpx;
+    text-align: center;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    border-radius: 10rpx;
+    background-color: #707ae6;
+}
+/* 卡片 */
+.info-list {
+    width: 100%;
+    height: 250rpx;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 0.5px solid #d1d1d1;
+    border-radius: 20rpx;
+    box-shadow:
+        -4px 4px 7px -4px rgba(4, 0, 0, 0.46);
+    margin-top: 30rpx;
+
+}
+/* 图片 */
+.info-list .info-image {
+    width: 300rpx;
+    height: 200rpx;
+    padding: 25rpx;
+    border-radius: 10rpx;
+}
+/* 文本 */
+.info-list-text {
+    display: flex;
+    flex-direction: column;
+}
+/* 文本标题 */
+.info-list .info-list-text .info-list-title {
+    line-height: 35rpx;
+    font-size: 35rpx;
+    font-weight: 500;
+    padding-top: 25rpx;
+    font-weight: 600;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 文本标签 */
+.info-list-tag {
+    display: flex;
+    flex-direction: row;
+    margin: 20rpx 0rpx 10rpx 0;
+}
+.info-list-intro {
+    padding: 5rpx;
+    font-size: 25rpx;
+    font-weight: 300;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

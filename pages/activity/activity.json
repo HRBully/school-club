@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "navigationBarTitleText": "活动报名",
+    "usingComponents": {
+        "info-card": "/components/info-card/info-card",
+        "t-overlay": "tdesign-miniprogram/overlay/overlay",
+        "t-sticky": "tdesign-miniprogram/sticky/sticky",
+        "t-icon": "tdesign-miniprogram/icon/icon",
+        "t-skeleton": "tdesign-miniprogram/skeleton/skeleton"
+    }
+}

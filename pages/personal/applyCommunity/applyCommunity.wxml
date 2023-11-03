@@ -1,0 +1,77 @@
+<view class="form">
+    <view class="form-top">
+        <view class="top-left">
+            <view class="item">
+                <view class="title">性别（必填）</view>
+                <picker bindchange="changeSex" value="{{sex}}" range="{{sexList}}">
+                    <view class="picker">
+                        当前选择：{{sexList[sex]}}
+                    </view>
+                </picker>
+            </view>
+            <view class="item">
+                <view class="title">QQ（必填）</view>
+                <input type="number" class="inp" model:value="{{QQ}}" />
+            </view>
+            <view class="item">
+                <view class="title">手机号（必填）</view>
+                <input type="number" class="inp" model:value="{{phone}}" />
+            </view>
+        </view>
+        <view class="top-right">
+        <view style="font-size: 25rpx; color: red;">图片大小不能超过1M</view>
+            <view class="img" bindtap="addImg">
+                <image src="{{picture}}" wx:if="{{picture}}"></image>
+                <view class="title" wx:else>一寸照片</view>
+            </view>
+        </view>
+    </view>
+    <view class="form-center">
+        <view class="item">
+            <view class="title">学院（必填）</view>
+            <picker bindchange="changeCollege" value="{{collegeIndex}}" range="{{majorCollegeList}}" range-key="college">
+                <view class="picker">
+                    当前选择：{{majorCollegeList[collegeIndex].college}}
+                </view>
+            </picker>
+        </view>
+        <view class="item">
+            <view class="title">专业（必填）</view>
+            <picker bindchange="changeMajor" value="{{majorIndex}}" range="{{majorShow}}">
+                <view class="picker">
+                    当前选择：{{majorShow[majorIndex]}}
+                </view>
+            </picker>
+        </view>
+        <view class="item">
+            <view class="title">政治面貌（必填）</view>
+            <picker bindchange="changePolitical" value="{{politicalIndex}}" range="{{politicalList}}">
+                    <view class="picker">
+                        当前选择：{{politicalList[politicalIndex]}}
+                    </view>
+                </picker>
+        </view>
+    </view>
+    <view class="form-bottom">
+        <view class="title">申报社团（社团1必填）</view>
+        <view class="community">
+            <view class="community-title">社团1</view>
+            <picker bindchange="changeClubOne" value="{{index_1}}" range="{{clubList}}">
+                <view class="picker">
+                    当前选择：{{clubList[index_1]}}
+                </view>
+            </picker>
+        </view>
+        <view class="community">
+            <view class="community-title">社团2</view>
+            <picker bindchange="changeClubTwo" value="{{index_2}}" range="{{clubList}}">
+                <view class="picker">
+                    当前选择：{{clubList[index_2]}}
+                </view>
+            </picker>
+        </view>
+    </view>
+</view>
+<view class="footor">
+    <button class="btn" bindtap="submitForm">提交</button>
+</view>

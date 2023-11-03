@@ -1,0 +1,20 @@
+<!--pages/activity/activity.wxml-->
+<!-- 选择 -->
+<!-- 遮罩层 -->
+<t-overlay visible="{{overlayVisible}}" bind:click="handleOverlayClick" />
+<t-skeleton
+      t-class="skeleton-avatar"
+      t-class-avatar="skeleton-avatar-size"
+      t-class-text="basic-text"
+      rowCol="{{rowCol2}}"
+      theme="avatar-text"
+      animation="flashed"
+      loading="{{isLoading}}"
+    ></t-skeleton>
+<scroll-view class="activity-info" scroll-y="true" scroll-left refresher-enabled="true" refresher-triggered="{{isPull}}" bindrefresherrefresh="onPull" bindscrolltolower="onDown" bindscroll="onMonitor" scroll-top="{{topDistance}}">
+        <view class="scroll-item" wx:for="{{infolists}}" wx:key="aId" >   
+            <info-card  info="{{item}}" tag data-id="{{item.aid}}" bindtap="goDetails" data-classes="1"></info-card>
+        </view>
+</scroll-view>
+
+<view class="top-btn" hidden="{{isTop}}"><t-icon name="backtop" size="xl" bind:click="trunTop" /></view>

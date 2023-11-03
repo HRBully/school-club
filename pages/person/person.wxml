@@ -1,0 +1,39 @@
+<!--pages/person/person.wxml-->
+<view wx:if="{{isBind}}">
+    <view class="top">
+        <image src="../../image/person-bg.jpg" class="bg"></image>
+        <view class="info">
+            <image src="../../image/person-avatar.png" class="avatar"></image>
+            <view class="name">{{name}}</view>
+            <view class="sno">{{sno}}</view>
+        </view>
+    </view>
+    <view class="center">
+        <view class="btns">
+            <view wx:for="{{btnList}}" wx:key="item" class="btn-item" bindtap="gotoPage" data-target="{{item.target}}">
+                <view class="btn-name">{{item.name}}</view>
+                <image src="../../image/icon-btn.png" class="btn-icon"></image>
+            </view>
+        </view>
+    </view>
+    <view style="text-align: center;">如有问题请加群：589823657</view>
+</view>
+<view wx:else class="no-bind">
+    <view class="msg">
+        <view class="h1">账号绑定</view>
+        <view class="des">学生首次进入小程序后，需要进行学号绑定，绑定后可进行社团和活动报名操作。</view>
+        <view class="des warn">该操作只能进行一次，请确保信息正确</view>
+        <view class="bind-item">
+            <view class="title">学号</view>
+            <input type="number" model:value="{{sno}}" />
+        </view>
+        <view class="bind-item">
+            <view class="title">姓名</view>
+            <input type="text" model:value="{{name}}" />
+        </view>
+    </view>
+    <view class="bind-btns">
+        <button bindtap="reset">重置</button>
+        <button bindtap="confirm">确认</button>
+    </view>
+</view>

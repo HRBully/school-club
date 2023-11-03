@@ -1,0 +1,23 @@
+<t-tabs defaultValue="0" bind:change="onTabsChange" class="enroll-page-header">
+  <t-tab-panel wx:for="{{classList}}" label="{{item.class}}" value="{{item.value}}" change="onTabsChange" wx:key="item"></t-tab-panel>
+</t-tabs>
+<t-skeleton
+      t-class="skeleton-avatar"
+      t-class-avatar="skeleton-avatar-size"
+      t-class-text="basic-text"
+      rowCol="{{rowCol2}}"
+      theme="avatar-text"
+      animation="flashed"
+      loading="{{isLoading}}"
+    ></t-skeleton>
+<scroll-view class="enroll-page-container" scroll-y="true" scroll-top="{{topDistance}}" bindscroll="onMonitor" scroll-left refresher-enabled="true" refresher-triggered="{{isPull}}" bindrefresherrefresh="onPull" bindscrolltolower="onDown" wx:if="{{!isLoading}}">
+        <view class="scroll-item"  wx:for="{{infoLists}}" hidden="{{isAll}}" wx:key="item">   
+            <info-card info="{{item}}" bindtap="goDetails" data-id="{{item.cid}}" data-classes="0"></info-card>
+        </view>
+        <view class="scroll-item" wx:for="{{classInfoList}}" hidden="{{!isAll}}" wx:key="item">
+            <info-card  info="{{item}}"  bindtap="goDetails" data-id="{{item.cid}}" data-class="1"></info-card>
+        </view>
+</scroll-view>
+<view class="apply-btn" bindtap="gotoApply">报名</view>
+<view class="top-btn" hidden="{{isTop}}"><t-icon name="backtop" size="xl" bind:click="trunTop" /></view>
+

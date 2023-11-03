@@ -1,0 +1,53 @@
+<view class="details-page-header">
+<!-- 封面 -->
+  <t-image src="https://st.wh2mcy.top/{{cover}}" t-class="cover-image" />
+</view>
+<!-- 标题部分 -->
+<view class="details-page-title">
+  <!-- 标题 -->
+  <view class="title-name">{{name}}</view>
+  <!-- 社团 -->
+  <view class="title-club" wx:if="{{isActive}}">{{club}}</view>
+  <!-- 标语 -->
+  <view class="title-slogan" wx:else="{{isActive}}">{{slogan}}</view>
+</view>
+<!-- 活动时间部分 -->
+<view class="details-page-center active-time" wx:if="{{isActive}}">
+  <!-- 修饰图片 -->
+  <image src="../../image/center-before.png" class="center-image"></image>
+  <!-- 时间 -->
+  <view >活动开始时间：{{start_time}}</view>
+  <view>活动结束时间：{{end_time}}</view>
+  <!-- 地点 -->
+  <view>活动地点：{{site}}</view>
+  <!-- 修饰图片 -->
+  <image src="../../image/center-after.png" class="center-image"></image>
+</view>
+<!-- 风采图片部分 -->
+<view class="details-page-center presence-img" wx:else="{{isActive}}">
+  <!-- 修饰图片 -->
+  <image src="../../image/center-before.png" class="center-image"></image>
+    <!-- 图片列表 -->
+    <t-image wx:for="{{imgs}}" src="https://st.wh2mcy.top/{{item}}" t-class="info-image" mode="widthFix" wx:key="index"/>
+    <!-- 修饰图片 -->
+  <image src="../../image/center-after.png" class="center-image"></image>
+</view>
+<!-- 介绍部分 -->
+<view class="details-page-intro">
+  <view class="intro-title" wx:if="{{isActive}}">活动内容</view>
+  <view class="intro-title" wx:else="{{isActive}}">社团介绍</view>
+  <!-- 介绍主体 -->
+  <view class="intro-content">{{intro}}</view>
+</view>
+
+<!-- 群聊部分 -->
+<view class="details-page-group">
+  <view class="group-title" wx:if="{{isActive}}">活动群聊</view>
+  <view class="group-title" wx:else="{{isActive}}">社团群聊</view>
+  <image src="../../image/group-before.png" class="center-image"></image>
+  <image src="https://st.wh2mcy.top/{{group}}" class="group-image" mode="widthFix"></image>
+  <image src="../../image/group-after.png" class="center-image"></image>
+</view>
+<view class="details-page-btn">
+  <button class="apply-btn" bindtap="gotoApply">报名</button>
+</view>

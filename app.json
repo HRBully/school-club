@@ -1,0 +1,53 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/enroll/enroll",
+        "pages/activity/activity",
+        "pages/person/person",
+        "pages/details/details",
+        "components/info-card/info-card",
+        "pages/personal/myCommunity/myCommunity",
+        "pages/personal/myActivity/myActivity",
+        "pages/personal/applyCommunity/applyCommunity",
+        "pages/personal/applyActivity/applyActivity"
+    ],
+    "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "#707ae6",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "./image/icon-tabBar-index-selected.png",
+                "iconPath": "./image/icon-tabBar-index.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "./image/icon-tabBar-enroll-selected.png",
+                "iconPath": "./image/icon-tabBar-enroll.png",
+                "pagePath": "pages/enroll/enroll",
+                "text": "招新"
+            },
+            {
+                "selectedIconPath": "./image/icon-tabBar-active-selected.png",
+                "iconPath": "./image/icon-tabBar-active.png",
+                "pagePath": "pages/activity/activity",
+                "text": "活动"
+            },
+            {
+                "selectedIconPath": "./image/icon-tabBar-person-selected.png",
+                "iconPath": "./image/icon-tabBar-person.png",
+                "pagePath": "pages/person/person",
+                "text": "我的"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#707ae6",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "white"
+    },
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

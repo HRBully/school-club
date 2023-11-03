@@ -1,0 +1,97 @@
+/* pages/person/person.wxss */
+.top {
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 500rpx;
+}
+
+.info {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: calc(40% - 35px);
+    left: calc(50% - 35px);
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sno {
+    margin-top: 10rpx;
+    font-size: 14px;
+}
+
+.status-icon {
+    width: 16px;
+    height: 16px;
+    padding: 0 10rpx;
+    vertical-align: middle;
+}
+.btns{
+    padding: 30rpx 50rpx 0;
+}
+.btn-item{
+    line-height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-item+.btn-item{
+    border-top: 1px solid rgba(112, 112, 112, 0.103);
+}
+.btn-name {
+    font-weight: 400;
+}
+
+.btn-icon {
+    width: 12px;
+    height: 24px;
+}
+.no-bind{
+    width: 500rpx;
+    margin: 200rpx auto;
+}
+.msg{
+    border: 1px solid rgb(70, 149, 202);
+    background-color: rgb(153, 214, 255);
+    border-radius: 50rpx;
+    text-align: center;
+}
+.h1{
+    padding: 20rpx;
+    font-weight: 700;
+}
+.des{
+    font-size: 26rpx;
+}
+.warn{
+    color: rgb(121, 20, 20);
+    font-weight: 700;
+}
+.bind-item{
+    margin: 20rpx 20%;
+}
+
+.bind-item input{
+    border-bottom: 1px solid black;
+    /* margin: 0 10%; */
+    color: rgb(7, 0, 73);
+}
+.no-bind .bind-btns{
+    display: flex;
+    margin-top: 30rpx;
+}
+.no-bind .bind-btns button{
+    border: 1px solid rgb(70, 149, 202);
+    background-color: rgb(153, 214, 255);
+}

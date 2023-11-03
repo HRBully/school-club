@@ -1,0 +1,9 @@
+<!--pages/myCommunity/myCommunity.wxml-->
+<view class="list">
+    <view class="item" wx:for="{{clubs}}" wx:key="item">
+        <view class="item-left"></view>
+        <view class="item-name">{{item.name}}</view>
+        <image src="../../image/icon-btn.png" class="item-btn-icon"></image>
+    </view>
+</view>
+<button bindtap="goApplyClub">修改报名表</button>

@@ -1,0 +1,24 @@
+<!--pages/applyActivity/applyActivity.wxml-->
+<view class="form">
+    <view class="item">
+        <view class="title">学院（必填）</view>
+        <picker bindchange="changeCollege" value="{{collegeIndex}}" range="{{majorCollegeList}}" range-key="college">
+            <view class="picker">
+                当前选择：{{majorCollegeList[collegeIndex].college}}
+            </view>
+        </picker>
+    </view>
+    <view class="item">
+        <view class="title">专业（必填）</view>
+        <picker bindchange="changeMajor" value="{{majorIndex}}" range="{{majorShow}}">
+            <view class="picker">
+                当前选择：{{majorShow[majorIndex]}}
+            </view>
+        </picker>
+    </view>
+    <view class="item">
+        <view class="title">联系方式（必填）</view>
+        <input type="number" class="inp" model:value="{{phone}}" />
+    </view>
+</view>
+<button class="btn" bindtap="apply">提交</button>

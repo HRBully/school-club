@@ -1,0 +1,20 @@
+<view class="info-list" >
+    <view class="info-list-img">
+        <t-image src="https://st.wh2mcy.top/{{info.cover}}" t-class="info-image" />
+    </view>
+    <view class="info-list-text">
+        <view class="info-list-title">
+            {{info.name}}
+        </view>
+        <view class="info-list-tag active" wx:if="{{tag}}">
+            <view class="tag">活动</view>
+            <view class="tag" style="margin-left: 7rpx; width: 130rpx;">{{info.club}}</view>
+            <view class="tag" style="margin-left: 7rpx;">{{info.classes}}</view>
+        </view>
+        <view class="info-list-tag" wx:else="{{tag}}">
+            <view class="tag">招新</view>
+            <view class="tag" style="margin-left: 20rpx;">{{info.classes}}</view>
+        </view>
+        <view class="info-list-intro">{{info.intro}}</view>
+    </view>
+</view>

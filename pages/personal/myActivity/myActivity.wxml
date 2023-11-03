@@ -1,0 +1,7 @@
+<view class="list">
+    <view class="item" wx:for="{{activities}}" wx:key="item" bindtap="goDetails" data-aid="{{item.aid}}">
+        <view class="item-left"></view>
+        <view class="item-name">{{item.name}}</view>
+        <image src="../../image/icon-btn.png" class="item-btn-icon"></image>
+    </view>
+</view>

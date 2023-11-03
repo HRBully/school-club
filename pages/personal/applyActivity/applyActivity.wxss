@@ -1,0 +1,21 @@
+/* pages/applyActivity/applyActivity.wxss */
+.form{
+    margin: 40rpx 50rpx;
+}
+.title{
+    line-height: 60rpx;
+    padding-left: 20rpx;
+}
+.inp, picker{
+    padding: 5rpx 20rpx;
+    border: 2rpx solid rgb(0, 0, 0);
+    border-radius: 25rpx;
+    margin-bottom: 30rpx;
+}
+.btn{
+    margin: 200rpx auto 50rpx;
+    width: 200rpx;
+    background-color: #707ae6;
+    color: #fff;
+    border-radius: 20rpx;
+}

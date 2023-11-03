@@ -1,0 +1,51 @@
+page .skeleton-avatar {
+    margin: 32rpx;
+}
+
+page .basic-text {
+    border-radius: 4rpx;
+}
+
+page .skeleton-avatar .skeleton-avatar-size {
+    height: 96rpx;
+    width: 96rpx;
+    border-radius: 100%;
+    margin-right: 24rpx;
+}
+
+.enroll-page-container {
+    height: calc(100vh - 94rpx);
+    overflow: scroll
+}
+
+.apply-btn,
+.top-btn{
+    /* 大小 */
+    width: 96rpx;
+    height: 96rpx;
+    /* 定位 */
+    position: fixed;
+    
+    /* 字体 */
+    color: white;
+    text-align: center;
+    line-height: 96rpx;
+    font-size: 25rpx;
+    /* 盒子修饰 */
+    border-radius: 50rpx;
+    background-color: #508bff;
+}
+.apply-btn {
+    bottom: 260rpx;
+    right: 32rpx;
+}
+.top-btn {
+    bottom: 130rpx;
+    right: 32rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-item {
+    padding: 0 24rpx;
+}

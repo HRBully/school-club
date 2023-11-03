@@ -1,0 +1,158 @@
+/* pages/activity/activity.wxss */
+.showSelect {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20rpx;
+    font-weight: 500;
+    background: white;
+}
+
+.activeSel {
+    border-bottom: 2rpx solid #5c67e5;
+}
+
+.selectColor {
+    color: #5c67e5;
+}
+
+.t-sticky {
+    background: white;
+}
+
+.showSelectItem {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding-bottom: 10rpx;
+}
+
+/* 倒三角 */
+.corner {
+    transform: translate(25%, 65%);
+    width: 0px;
+    height: 0px;
+    border: 15rpx solid #bdbdbd;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.selectContainer {
+    padding-top: 20rpx;
+    height: 240rpx;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+
+.timeAll {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.timeItem {
+    width: 175rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    text-align: center;
+    border: 1rpx solid#bdbdbd;
+    border-radius: 10rpx;
+    padding: 10rpx 15rpx;
+    margin: 10rpx 20rpx;
+}
+
+.typeAll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6rpx;
+}
+
+.typeItem {
+    width: 175rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    letter-spacing: 3rpx;
+    text-align: center;
+    border: 1rpx solid#bdbdbd;
+    border-radius: 10rpx;
+    padding: 10rpx 15rpx;
+    margin: 10rpx 20rpx;
+}
+
+.decideIcon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 35rpx;
+    width: 100%;
+    height: 100rpx;
+    background: white;
+}
+
+.cancelIcon {
+    width: 100rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    text-align: center;
+    border: 1rpx solid#bdbdbd;
+    border-radius: 10rpx;
+    padding: 10rpx 15rpx;
+    margin: 0 20rpx;
+    background: #eeeeee;
+    color: #838383;
+}
+
+.confirmIcon {
+    width: 100rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    text-align: center;
+    border: 1rpx solid#bdbdbd;
+    border-radius: 10rpx;
+    padding: 10rpx 15rpx;
+    margin: 0 20rpx;
+    color: white;
+    background-color: #5c67e5;
+}
+
+.active {
+    color: white;
+    background-color: #5c67e5;
+}
+
+.activity-info {
+    height: calc(100vh);
+    overflow: scroll;
+    padding-bottom: 20rpx;
+}
+
+.scroll-item {
+    padding: 0 14rpx;
+}
+
+.top-btn{
+    /* 大小 */
+    width: 96rpx;
+    height: 96rpx;
+    /* 定位 */
+    position: fixed;
+    
+    /* 字体 */
+    color: white;
+    text-align: center;
+    line-height: 96rpx;
+    font-size: 25rpx;
+    /* 盒子修饰 */
+    border-radius: 50rpx;
+    background-color: #508bff;
+}
+.top-btn {
+    bottom: 130rpx;
+    right: 32rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

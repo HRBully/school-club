@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="home-page-header">
+   
+    <view class="swiper-wrap">
+        <t-swiper wx:if="{{swipers.length > 0}}" current="{{current}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" navigation="{{navigation}}">
+            <t-swiper-item wx:for="{{swipers}}" wx:key="index">
+                <t-image src="{{item.image}}" t-class="t-image__swiper" mode="widthFix" />
+            </t-swiper-item>
+        </t-swiper>
+    </view>
+</view>
+<view class="home-page-container">
+    <t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs">
+        <t-tab-panel label="社团风采" value="0" t-class="container-lists"></t-tab-panel>
+        <t-tab-panel label="社团活动" value="1" t-class="container-lists"></t-tab-panel>
+    </t-tabs>
+</view>
+<t-skeleton
+      t-class="skeleton-avatar"
+      t-class-avatar="skeleton-avatar-size"
+      t-class-text="basic-text"
+      rowCol="{{rowCol2}}"
+      theme="avatar-text"
+      animation="flashed"
+      loading="{{isLoading}}"
+    ></t-skeleton>
+<scroll-view class="home-page-info" scroll-y="true" scroll-left refresher-enabled="true" refresher-triggered="{{isPull}}" bindrefresherrefresh="onPull" bindscrolltolower="onDown" wx:if="{{!isLoading}}" hidden="{{isEnroll}}">
+        <view class="scroll-item" wx:for="{{presenceLists}}" wx:key="item"  >   
+            <info-card  info="{{item}}" bindtap="goDetails" data-id="{{item.cid}}" data-classes="0"></info-card>
+        </view>
+</scroll-view>
+<scroll-view class="home-page-info" scroll-y="true" scroll-left refresher-enabled="true" refresher-triggered="{{isPull}}" bindrefresherrefresh="onPull" bindscrolltolower="onDown" wx:if="{{!isLoading}}"  hidden="{{!isEnroll}}" >
+        <view class="scroll-item" wx:for="{{activeLists}}" wx:key="item">
+            <info-card  info="{{item}}" tag="true" bindtap="goDetails" data-id="{{item.aid}}" data-classes="1"></info-card>
+        </view>
+</scroll-view>
